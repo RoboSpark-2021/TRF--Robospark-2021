@@ -1,0 +1,155 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+
+// To create the bank structure
+struct Bank
+{
+    int Account_no;
+    char Name[20];
+    float Balance;
+};
+
+//declaration of the function
+void Print_Acc_and_Name(struct Bank [],int cust);
+void Withdrawl_deposit(struct Bank [],int cust);
+
+int main(void)
+{
+    printf("----------------------------------- Welcome to Bank --------------------------------\n");
+
+    char ch;
+
+    //No.of the customers
+    int cust;
+
+    printf("How many customers do you want ?\n");
+    scanf("%d",&cust);
+
+    // Create the structure of the array
+    struct Bank custom[cust];
+
+    //Enter the Name, Account_no and Balance  of the customers
+    printf("Enter the Name, Account_no and Balance  of the customers--->\n");
+    for(int i = 0; i < cust; i++)
+    {
+        printf("customer %d :\n",i+1);
+        printf("Customer Account_no ----> \t");
+        fflush(stdin);
+        scanf("%d",&custom[i].Account_no);
+        printf("Customer Name ----> \t");
+        fflush(stdin);
+        gets(custom[i].Name);
+        printf("Customer Balance ----> \t");
+        fflush(stdin);
+        scanf("%f",&custom[i].Balance);
+    }
+    printf("\n\n");
+
+    do
+    {   
+        //option for the customers
+        printf("------------------------------------- Menu---------------------------------------\n\n");
+        printf("1) Enter 1 to print Account Number and Name of each costumer\n2) Enter 2 to for Withdrawl or deposit \n");
+
+        // Variable declaration
+        int option;
+
+        //Enter the number you want
+        printf("\nEnter the option number ------->\t");
+        scanf("%d",&option);
+
+
+        // calling the fuctions
+    
+    
+        switch(option)
+        {
+            case 1: Print_Acc_and_Name(custom,cust);
+                    break;
+                    
+            case 2: Withdrawl_deposit(custom,cust);
+                    break;
+            default:printf("Entered Wrong option\n");
+                    break;
+        };
+        printf("Do you want to continue (Y/N) ?\t");
+        fflush(stdin);
+        scanf("%c",&ch);
+    }while(ch =='Y');
+    
+return 0;
+}
+
+
+// defining the fuctions
+void Print_Acc_and_Name(struct Bank custom[],int cust)
+{
+    // printing Name & account number
+    printf("\n\n---------------------- Customer Name and Account Number -------------------------\n\n");
+    for(int i = 0;i < cust; i++)
+    {
+        printf("Customer Name %d : %s\n",i,custom[i].Name);
+        printf("Customer Account No. %d : %d\n\n",i,custom[i].Account_no);
+    }
+    
+};
+
+void Withdrawl_deposit(struct Bank custom[],int cust)
+{   
+    // Withdrawl and depostion 
+    printf("\n\n-----------------Customer Withdrawl and deposition------------------------\n\n");
+    for(int i = 0;i < cust;i++)
+    {
+        printf("%s",custom[i].Name);
+        printf("\nDo you want Withdraw or deposit ???\n");
+        printf("1) Enter 1 for deposit\n2) Enter 2 for withdrawl\n");
+
+        //choice for the customer
+        int choice;
+        char ch;
+        printf("Enter the choice ---->\t");
+        fflush(stdin);
+        scanf("%d",&choice);
+        do
+        {
+            char ch;
+            switch(choice)
+            {
+                case 1: {float deposit;
+                        printf("\nHow Much do you want to deposit ????\t");
+                        scanf("%f",&deposit);
+
+                        //updated amount
+                        float total = custom[i].Balance + deposit;
+                        custom[i].Balance = total;
+                        printf("%s----->\n",custom[i].Name);
+                        printf("Your Updated Balance is %f :\n",custom[i].Balance);
+                        break;} 
+                case 2: {float withdraw;
+                        printf("\nHow Much do you want to withdraw ????\t");
+                        scanf("%f",&withdraw);  
+
+                        if(custom[i].Balance > 10.0)
+                        {
+                            //withdrawn amount
+                            float total = custom[i].Balance = custom[i].Balance - withdraw;
+                            custom[i].Balance = total;
+                            printf("%s ----->",custom[i].Name);
+                            printf("\n");
+                            printf("Your Updated Balance is %f :\n\n",custom[i].Balance);
+                        }
+                        else
+                        {
+                            printf("You can not withdraw your Balance is less than permissible ammount\n\n");
+                        }
+                        break;}
+                        
+                default:break; 
+            }
+        printf("Do you want to continue (Y/N)?\t");
+        scanf("%ch",&ch);  
+        }while(ch == 'Y');
+    }
+    
+}

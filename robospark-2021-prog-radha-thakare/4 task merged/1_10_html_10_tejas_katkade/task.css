@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   
+    font-family: 'Montserrat', sans-serif;
+}
+html{
+    font-size: 62.5%;
+    
+}
+.heading{
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    color: #fff;
+    border-radius: 1rem;
+   
+    text-align: center;
+    background:	#4682b4;
+    padding:2rem;
+    
+}
+.outer{
+    background: linear-gradient(rgba(0, 0, 0, 0.73),rgba(0, 0, 0,0.73)) , url(https://wallpaperaccess.com/full/187161.jpg);
+    width:100vw;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+
+}
+input{
+  display: block;
+  width: 80%;
+  border: none;
+  border-bottom: 3px solid skyblue;
+  margin-bottom: 2rem;
+  padding:1rem;
+  margin-left: 13%;
+
+ 
+}
+.inner{
+    border-radius:2rem;
+  
+    width:30%;
+    
+    margin-left:35% ;
+    
+    position: relative;
+    top:20%;
+    
+    
+    
+}
+.form{
+    background: #fff;
+    padding: 3rem ;
+    border-radius: 2rem;
+    
+    
+}
+.form a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color:skyblue;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    margin-left: 13%;
+    }
+.button{
+    border-radius: 1rem;
+    color:#fff;
+    background:		#191970;
+}   
+input:focus{
+    padding:5px;
+    outline:none;
+    border:none;
+    border-bottom:  3px solid skyblue;
+    
+}   

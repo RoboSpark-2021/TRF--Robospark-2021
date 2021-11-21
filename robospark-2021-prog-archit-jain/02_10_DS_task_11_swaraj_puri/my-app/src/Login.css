@@ -1,0 +1,79 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: black;
+    background: linear-gradient(rgba(0, 0, 0, 0.73),rgba(0, 0, 0,0.73)) , url(https://wallpaperaccess.com/full/187161.jpg) ;
+}
+.sectionblock{
+    display: block;
+    margin-top: 5%;
+    min-height: 75vh;
+    display: grid;
+    place-content: center;
+    padding:0px;
+    
+    
+
+}
+
+.block{
+    min-width: 300px;
+    width: 30vw;
+    height: 50vh;
+    border-radius: 1rem;
+    background-color: #fff;
+    color: #fff;
+    place-content: center;
+    text-align: center;
+    padding-top: 0px;
+
+    
+}
+.blockElements{
+    width: 80%;
+    color: rgb(0, 0, 0);
+    padding: 12px 20px;
+    margin: 8px 30px;
+    display:block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    border-bottom-color: rgb(0, 65, 139);
+    
+
+}
+.text{
+    color:rgb(0, 65, 139);
+    margin-left: 30px;
+    margin-right: 50%;
+    
+    font-size: 14px;;
+}
+.blockElementsButton{
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display:block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    place-content: center;
+    margin-left: 30px;
+
+    
+}
+.title h3{
+    background-color:rgb(0, 83, 139);
+    display: grid;
+    border-radius: 1rem 1rem 0rem 0rem;
+
+    place-content: center;
+    text-align: center;
+    height: 50px;
+    margin:0px;
+    margin-bottom: 15px;
+    padding-top: 0px,10px;
+
+    
+}

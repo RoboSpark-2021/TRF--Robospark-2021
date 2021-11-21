@@ -1,0 +1,67 @@
+*********index.html code:***********
+
+<html lang="en">
+  <head>
+    <title>Task 10</title>
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
+
+------------------------------------------------------------------  
+
+**************home.js code***********
+
+
+import React from "react";
+
+class Home extends React.Component {
+    render() {
+        return (
+        <div>
+            <div class="loginbox">
+            <div class="title">
+                        <h1>LOGIN</h1>
+                    </div>
+                <form>
+                    <p>Username</p>
+                    <input type="text" name="" placeholder="Enter Username"/>
+                    <p>Password</p>
+                    <input type="password" name="" placeholder="Enter Password"/>
+                    <input type="submit" name="" value="Login"/>
+                    <a href ="#">Lost your password?</a><br/>
+                </form>
+            </div>
+        </div>
+        );
+    }
+}
+
+export default Home;
+
+------------------------------------------------------------------
+
+
+************App.js code:************
+
+import Home from './pages/home';
+import './App.css';
+
+function App() {
+  return (
+
+    <Home />
+    );
+  }
+
+export default App;
+
+
+------------------------------------------------------------------
+
+
+
+

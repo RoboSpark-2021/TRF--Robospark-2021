@@ -1,0 +1,119 @@
+#includebitsstdc++.h
+using namespace std;
+
+class for personal data
+class Personal_data{
+protected
+string name;
+string surname;
+string address;
+int mobile_no;
+string dob;
+
+public
+constructor for personal_data
+
+Personal_data(){
+
+}
+void set_Personaldata(){
+    coutEnter Personal Data;
+    coutnEnter name ;
+    cinname;
+    coutnEnter surname ;
+    cinsurname;
+    coutnEnter address ;
+    cinaddress;
+    coutnEnter mobile no ;
+    cinmobile_no;
+    coutnEnter date of birth ;
+    cindob;
+}
+
+
+};
+
+class for Profesional data
+class Profesional_data{
+protected
+string name_of_organization;
+string job_profile;
+string project;
+
+public
+
+constructor for profestional_data
+Profesional_data(){
+
+}
+void set_Profesionaldata(){
+    coutnEnter Profesional data n;
+    coutnEnter name of organization ;
+    cinname_of_organization;
+    coutnEnter job profile ;
+    cinjob_profile;
+    coutnEnter Project name ;
+    cinproject;
+}
+
+};
+
+class for academic data
+class Academic_data{
+protected
+int year_of_passing;
+float cgpa;
+string college_name;
+string branch;
+
+public
+
+constructor for Academic_data
+Academic_data(){
+
+}
+void set_Academicdata(){
+    coutEnter Academic datan;
+    coutEnter year of passing ;
+    cinyear_of_passing;
+    coutnEnter cgpa ;
+    cincgpa;
+    coutnEnter college name ;
+    cincollege_name;
+    coutnEnter branch ;
+    cinbranch;
+
+}
+};
+
+class for biodata
+class biodatapublic Personal_data,public Profesional_data,public Academic_data
+{
+    public
+    void display(){
+    coutnYour biodata n;
+    coutnName name;
+    coutnSurname surname;
+    coutnAddress address;
+    coutnMobile no mobile_no;
+    coutnDate of Birth dob;
+    coutnName of Organization name_of_organization;
+    coutnJob Profile job_profile;
+    coutnProject project;
+    coutnYear of Passing year_of_passing;
+    coutnCGPA cgpa;
+    coutnCollege name college_name;
+    coutnBranch branchn;
+    }
+};
+
+int main(){
+    biodata B;            creation object of class biodata
+    B.set_Personaldata();
+    B.set_Profesionaldata();
+    B.set_Academicdata();
+
+    B.display();     displaying data through object of class biodata
+
+    return 0;
+}

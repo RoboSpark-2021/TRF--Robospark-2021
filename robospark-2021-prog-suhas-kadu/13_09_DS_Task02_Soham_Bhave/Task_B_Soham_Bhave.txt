@@ -1,0 +1,112 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+
+int main(void)
+{
+    //variable declaration
+    int size_A,size_B,new_size_B;
+    int *A,*B;
+
+    printf("------------------------ Malloc ---------------------------\n");
+    // enter the size 
+    printf("Enter the size you want ---->\t");
+    scanf("%d",&size_A);
+
+    //Malloc i.e dynamic memory allocation
+    A = (int*)malloc(size_A * sizeof(int));
+
+    if(A != NULL)
+    {
+        printf("Congragulations memory has been allocated succesfully !!!!! \n");
+
+        //take input data frmo the user
+        for(int i = 0; i < size_A;  i++)
+        {
+            printf("Enter the data number %d :",i);
+            scanf("%d",&A[i]);
+        }
+
+        printf("\n");
+        // print the data taken from the user
+        for(int i = 0; i < size_A;  i++)
+        {
+            printf("data at position %d : %d\n",i,A[i]);
+        }
+    }
+    else
+    {
+        printf("Memory has not been Allocated \n");
+    }
+
+    printf("-------------------Calloc and Realloc--------------------------------\n");
+    // enter the size 
+    printf("Enter the size you want ---->\t");
+    scanf("%d",&size_B);
+
+    //Calloc i.e dynamic memory allocation
+    B = (int*)calloc(size_B, sizeof(int));
+
+    if(B != NULL)
+    {
+        printf("Congragulations memory has been allocated succesfully !!!!! \n");
+
+        //take input data from the user
+        for(int i = 0; i < size_B;  i++)
+        {
+            printf("Enter the data number %d :",i);
+            scanf("%d",&B[i]);
+        }
+
+        printf("\n");
+        // print the data taken from the user
+        for(int i = 0; i < size_B;  i++)
+        {
+            printf("data at position %d : %d\n",i,B[i]);
+        }
+
+
+        //new size of the array
+        printf("Enter the size you want ---->\t");
+        scanf("%d",&new_size_B);
+
+        //using the realloc
+        B = (int*)realloc(B, new_size_B * sizeof(int));
+
+        if(B != NULL)
+        {
+            printf("Congragulations memory has been allocated succesfully !!!!! \n");
+
+            // Taking the data from the user
+            for(int i = 0; i < new_size_B; i++)
+            {
+                printf("Enter the data number %d :",i);
+                scanf("%d",&B[i]);
+            }
+
+            printf("\n");
+            // print the data taken from the user
+            for(int i = 0; i < new_size_B;  i++)
+            {
+                printf("data at position %d : %d\n",i,B[i]);
+            }
+
+        }
+        else
+        {
+            printf("Memory has not been Allocated \n");
+        }
+    }
+    else
+    {
+        printf("Memory has not been Allocated \n");
+    }
+
+
+
+    // free the memory
+    free(A);
+    free(B);
+
+    return 0;
+}

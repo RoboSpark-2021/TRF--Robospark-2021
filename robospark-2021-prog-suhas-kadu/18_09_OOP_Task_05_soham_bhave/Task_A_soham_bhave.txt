@@ -1,0 +1,7 @@
+Study about namespace and why using namespace std is a bad practice.
+
+
+Ans ->
+pulling in the entire std namespace into the global namespace is not good as it defeats the purpose of 
+namespaces and can lead to name collisions. This situation is called namespace pollution.
+That's why it is a bad practise.

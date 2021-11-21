@@ -1,0 +1,117 @@
+**********Html code:********
+
+ 
+<html>
+    <head>
+        <title>Task 10</title>
+        <link rel="stylesheet" href="style.css">
+        <body>
+                <div class="loginbox">
+                    <div class="title">
+                        <h1>LOGIN</h1>
+                    </div>
+                <form>
+                    <p>Username</p>
+                    <input type="text"  name="" placeholder="Enter Username">
+                    <p>Password</p>
+                    <input type="password" name="" placeholder="Enter Password">
+                    <input type="submit" name="" value="Login">
+                    <a href ="#">Forgot your password?</a><br>
+                </form>
+            </div>
+        
+        </body>
+    </head>
+</html>
+
+------------------------------------------------------------------
+
+************Css code:***********
+body
+{
+    margin:0;
+    padding:0;
+    background: linear-gradient(rgba(0, 0, 0, 0.73),rgba(0, 0, 0,0.73)) , url(https://wallpaperaccess.com/full/187161.jpg) ;
+    background-size:cover;
+    background-position:center;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+.loginbox
+{
+    width:320px;
+    height:450px;
+    background: #fff;
+    color: #3498DB;
+    top: 50%;
+    left:50%;
+    position:absolute;
+    transform: translate(-50%,-50%);
+    box-sizing:border-box;
+    padding: 50px 20px;
+    padding-bottom: 20px;
+    border-radius: 30px;
+
+}
+.title {
+    margin-top: none;
+    margin-bottom: 20px;  
+    text-align: center;
+    border-radius: 10px;
+    color: red;
+    letter-spacing: 5px;
+    border: 8px #3498DB solid;
+    padding: 2px 5px 2px 5px;;
+  }
+
+h1{
+    margin: 0;
+    padding: 10 10 20px;
+    color: #3498DB;
+    text-align: center;
+    font-size:25px;
+}
+
+.loginbox p
+{
+    margin: 0;
+    padding: 0;
+    font-weight:bold;
+}
+
+.loginbox input
+{
+width: 100%;
+margin-bottom:20px;
+}
+
+.loginbox input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background:transparent;
+    outline: none;
+    height: 40px;
+    color:#000;
+    font-size: 16px;
+}
+.loginbox input[type ="submit"]
+{
+    border:none;
+    outline:none;
+    height:40px;
+    background: #3498DB;
+    color:#fff;
+    font-size: 20px;
+    border-radius:20px;
+}
+
+.loginbox input[type="submit"]:hover
+{
+cursor:pointer;
+background:#3498DB;
+color: #000;
+}
+
+
+
+------------------------------------------------------------------
