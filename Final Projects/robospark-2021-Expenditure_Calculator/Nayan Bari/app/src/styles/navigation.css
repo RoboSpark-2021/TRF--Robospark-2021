@@ -1,0 +1,43 @@
+.navigation {
+    z-index: 1;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 3rem 5rem;
+  }
+    
+  .navigation .navlinks {
+    width: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  
+  .navigation .navlinks h4 {
+    color: #000;
+    font-size: clamp(16px, 1.25vw, 36px);
+    font-weight: 400;
+    text-decoration: none;
+  }
+
+  .navigation .navlinks h4:hover {
+    color: #636363;
+  }
+  
+  @media screen and (max-width: 960px) {
+    .navigation .navlinks {
+      width: 50%;
+    }
+  }

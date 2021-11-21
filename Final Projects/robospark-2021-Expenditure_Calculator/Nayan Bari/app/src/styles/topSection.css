@@ -1,0 +1,21 @@
+.top-section{
+    width: 100%;
+    padding: 3rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-section .card{
+    min-width: 460px;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 8px 16px 32px rgba(188, 221, 160, .25);
+    border-radius: 20px;
+}
+
+.top-section .card h2{
+    padding: 1rem 0;
+    color: #187701;
+}
+

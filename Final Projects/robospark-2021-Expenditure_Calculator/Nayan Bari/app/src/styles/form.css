@@ -1,0 +1,113 @@
+.additem{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.additem h4{
+    padding: 0 0 2rem 0;
+}
+
+.form {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .form .form-name {
+    position: relative;
+    width: 100%;
+    margin-right: 1rem;
+  }
+  
+  .form .form-name input {
+    font-family: "poppins", sans-serif;
+    width: 100%;
+    height: 35px;
+    color: #252525;
+    border: none;
+    outline: none;
+    padding-top: 5px;
+  }
+  
+  .form .form-name input::-webkit-outer-spin-button,
+  .say-hello .contact-form .form .form-name input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  .form .form-name label {
+    position: absolute;
+    font-family: "poppins", sans-serif;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 35px;
+    pointer-events: none;
+    border-bottom: 1px solid #AEA656;
+  }
+  
+  /* .form .form-name label::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 35px;
+    width: 100%;
+    border-bottom: 3px solid #fcc85f;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  } */
+  
+  .form .form-name input:focus + .label-name .content-name,
+  .form .form-name input:valid + .label-name .content-name {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    color: #AEA656;
+  }
+  
+  .form .form-name input:focus + .label-name::after,
+  .form .form-name input:valid + .label-name::after {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  
+  .form .content-name {
+    position: absolute;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    color: #A7A7A7;
+    bottom: 5px;
+    left: 0px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+
+  .submitButton{
+    margin: 0 auto;
+      text-align: center;
+      padding: 3rem 0 0 0;
+  }
+
+  .submitButton .btn{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    width: 150px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #AEA656;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-size: clamp(12px, 0.9vw, 24px);
+  font-weight: 400;
+  }

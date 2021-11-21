@@ -1,0 +1,66 @@
+/*this is used to decorate anything under the table tag also rem is used to refers to the font size of the html element*/
+.table{
+    padding: 5rem 5rem 0 5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/*this is used to decorate anything under the  row tag */
+.table .row{
+    width: 100%;
+    display: flex;
+}
+/*the style of the sr.no column is in this function */
+.table .row .number{
+    width: 5%;
+    padding: 1rem 0.5rem;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+/*the style of the name column is in this function */
+.table .row .name{
+    width: 40%;
+    padding: 1rem 0.5rem;
+    border: 1px solid #000;
+}
+/*the style of the price column is in this function */
+.table .row .price{
+    width: 10%;
+    padding: 1rem 0.5rem;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+/*the style of the amount column is in this function */
+.table .row .amount{
+    width: 7%;
+    padding: 1rem 0.5rem;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+/*the style of the total column is in this function */
+.table .row .total{
+    width: 10%;
+    padding: 1rem 0.5rem;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+/*the style of the actions column is in this function */
+.table .row .actions{
+    width: 10%;
+    padding: 1rem 0.5rem;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

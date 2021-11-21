@@ -1,0 +1,24 @@
+/*this is the function used for positioning and decorating the dropdown menu */
+#lm{
+    margin-left: 20%;
+    border-top: none;
+    border-left: none;
+    border-right:none;
+    border-color: #AEA656;
+    font-size: clamp(12px, 0.9vw, 24px);
+    font-weight: 400;
+    outline: none;
+  
+  }
+  /*this is the function used for positioning and decorating the search box */
+  #search{
+    margin-left: 8%;
+    width:40%;
+    border-top: none;
+    border-left: none;
+    border-right:none;
+    border-color: #AEA656;
+    font-size: clamp(12px, 0.9vw, 24px);
+    font-weight: 400;
+    outline: none;
+  }
